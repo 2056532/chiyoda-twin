@@ -1,0 +1,9 @@
+web/node_modules/
+web/dist/
+data/tilecache/
+data/history/
+tools/__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example

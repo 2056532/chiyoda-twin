@@ -1,0 +1,45 @@
+/*
+ * 视觉方向：借用东京地铁的导视系统
+ *  - 线路色只用来表示线路，不做装饰；界面本身是白底、深墨色文字、少量都营绿
+ *  - 数字和站名标识用窄体 Barlow Semi Condensed（类似车站号码牌的字形）
+ *  - 唯一的“记忆点”是底部的线路条（仿车厢内 LCD 线路图），其余界面保持安静
+ */
+:root {
+  color-scheme: light;
+  --ink: #1C2A33;          /* 主文字 */
+  --ink-2: #4E5E68;        /* 次要文字 */
+  --ink-3: #8595A0;        /* 弱提示 */
+  --paper: #FFFFFF;        /* 面板底 */
+  --mist: #EEF2F1;         /* 分隔、按钮底 */
+  --rule: #D8DFE2;         /* 细线 */
+  --toei: #1F8F4E;         /* 都营绿：选中态、主操作 */
+  --warn: #E08A1E;         /* 延误 */
+  --alert: #C8424F;        /* 错误、数据陈旧 */
+  --radius-panel: 10px;
+  --radius-ctl: 6px;
+  --shadow: 0 1px 2px rgba(28, 42, 51, 0.08), 0 8px 24px rgba(28, 42, 51, 0.10);
+  --num: 'Barlow Semi Condensed', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --text: 'PingFang SC', 'Hiragino Sans', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif;
+  font-family: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+* { box-sizing: border-box; }
+html, body, #app { margin: 0; height: 100%; overflow: hidden; background: #DDE4E6; }
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--toei); outline-offset: 2px; }
+
+.num { font-family: var(--num); font-variant-numeric: tabular-nums; letter-spacing: 0.01em; }
+
+/* Cesium 署名栏挪到底部右侧，缩小 */
+.cesium-viewer-bottom { left: auto !important; right: 8px; bottom: 4px !important; }
+.cz-credits { font-size: 10px; opacity: 0.85; }
+.cesium-widget-credits { background: rgba(255, 255, 255, 0.78); padding: 1px 6px; border-radius: 4px; color: var(--ink-2) !important; }
+.cesium-credit-logoContainer { display: none !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
