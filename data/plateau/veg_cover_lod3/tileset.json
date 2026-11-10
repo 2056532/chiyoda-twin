@@ -1,0 +1,65 @@
+{
+	"asset" : {
+		"version" : "1.0"
+	},
+	"properties" : {
+		"meshcode" : {},
+		"city_code" : {},
+		"city_name" : {},
+		"feature_type" : {},
+		"gml_id" : {},
+		"attributes" : {},
+		"core:creationDate" : {},
+		"veg:class" : {},
+		"veg:averageHeight" : {
+			"minimum" : 0.7,
+			"maximum" : 6.23
+		},
+		"uro:geometrySrcDescLod1" : {},
+		"uro:lodType" : {}
+	},
+	"geometricError" : 45.98883707165869,
+	"root" : {
+		"boundingVolume" : {
+			"region" : [ 2.4390386987899983, 0.6225006522333425, 2.439473325233308, 0.6227642201870502, 39.773295887282316, 48.88556671575246 ]
+		},
+		"geometricError" : 45.98883707165869,
+		"refine" : "REPLACE",
+		"content" : {
+			"boundingVolume" : {
+				"region" : [ 2.4390386987899983, 0.6225084007667739, 2.4394392771463225, 0.6227605730719893, 39.773295887282316, 48.88556671575246 ]
+			},
+			"uri" : "data/data2.b3dm"
+		},
+		"children" : [
+			{
+				"boundingVolume" : {
+					"region" : [ 2.4392560120116538, 0.6226324362101964, 2.439473325233308, 0.6227642201870502, 39.58524609075357, 44.10480010787698 ]
+				},
+				"geometricError" : 0,
+				"refine" : "REPLACE",
+				"content" : {
+					"boundingVolume" : {
+						"region" : [ 2.439403392911682, 0.6227039459496295, 2.439473325233308, 0.6227642201870502, 39.58524609075357, 44.10480010787698 ]
+					},
+					"uri" : "data/data0.b3dm"
+				},
+				"children" : []
+			},
+			{
+				"boundingVolume" : {
+					"region" : [ 2.4390386987899983, 0.6225006522333425, 2.4392560120116538, 0.6226324362101964, 41.27879190498833, 48.88556671575246 ]
+				},
+				"geometricError" : 0,
+				"refine" : "REPLACE",
+				"content" : {
+					"boundingVolume" : {
+						"region" : [ 2.4390386987899983, 0.6225006522333425, 2.439106533703269, 0.6225297613708204, 41.27879190498833, 48.88556671575246 ]
+					},
+					"uri" : "data/data1.b3dm"
+				},
+				"children" : []
+			}
+		]
+	}
+}
