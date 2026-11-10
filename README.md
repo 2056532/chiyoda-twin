@@ -6,7 +6,7 @@
 
 ## 一、怎么运行
 
-需要 Node.js 18 以上（在命令行输入 `node -v` 查看版本）。
+需要 Node.js 22.12+（22.x）或 24 及以上版本，推荐 Node.js 24 LTS（在命令行输入 `node -v` 查看版本）。
 
 最简单的方式是双击 `start.bat`。它会在第一次运行时自动安装依赖、构建前端，然后启动后端并打开浏览器。
 
@@ -14,7 +14,7 @@
 
 ```bash
 cd web
-npm install        # 安装前端依赖（只需一次）
+npm ci             # 按锁定版本安装前端依赖（只需一次）
 npm run build      # 构建前端，产物在 web/dist
 cd ..
 node server/server.mjs
